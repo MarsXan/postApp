@@ -1,43 +1,74 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>
+<html lang="en" ng-app="postApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="postApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="postApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="postApp" class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="app.css">
-  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" ng-app="postApp">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-rtl.css" rel="stylesheet">
+    <link href="assets/css/simple-line-icons.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/rtl.css" rel="stylesheet" type="text/css" media="all">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body>
-  <ul class="menu">
-    <li><a href="#!/view1">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
-  </ul>
+<body data-spy="scroll" data-target=".navigation" data-gr-c-s-loaded="true" class="">
+<div id="banner" class="bg-blur" style="position: absolute;left: 0;right: 0;top: 0;bottom: 0;">
 
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+    <div id="header">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <img src="assets/img/logo.png" class="hidden-sm hidden-xs">
+                </div>
 
-  <div ng-view></div>
+                <div class="navigation navbar-collapse collapse">
+                    <ul class="nav navbar-nav menu-right">
+                        <li class="active"><a href="#/certificationIssuance">خانه</a></li>
+                        <li><a class="btn" style="background:transparent;" href="#/certificationIssuance">صدور گواهی
+                            کدپستی</a></li>
+                        <li>
+                            <a class="btn" style="background:transparent;" href="#/findPostcode">یافتن کدپستی</a></li>
+                        <li>
+                            <a class="btn" style="background:transparent;" href="#/findPostcode">درخواست کدپستی</a>
+                        </li>
+                        <li>
+                            <a class="btn" style="background:transparent;" href="#/findPostcode">پیگیری درخواست</a>
+                        </li>
 
-  <div>Angular seed app: v<span app-version></span></div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <div ng-view>
+        </div>
+    </div>
+</div>
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="//code.angularjs.org/1.3.0-rc.5/angular-resource.min.js"></script>
+<script src="app.js"></script>
+<script src="pages/certificationIssuance/certificationIssuance.js"></script>
+<script src="pages/findPostcode/findPostcode.js"></script>
+<script src="routes.js"></script>
+<script src="directives.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
 </body>
 </html>

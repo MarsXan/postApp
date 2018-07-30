@@ -1,0 +1,385 @@
+/**
+*
+*	Name:			IRAN Sans-Serif Font
+*	Version:		4.0
+*	Author:			Moslem Ebrahimi (moslemebrahimi.com)
+*	Created on:		Dec 25, 2012
+*	Updated on:		Dec 12, 2015
+*	Website:		http://fontiran.com
+*	Copyright:		Commercial/Proprietary Software
+--------------------------------------------------------------------------------------
+ÙÙˆÙ†Øª Ù‡Ø§ÛŒ Ø§ÛŒØ±Ø§Ù† Ø³Ù† Ø³Ø±ÛŒÙ ÛŒÚ© Ù†Ø±Ù… Ø§ÙØ²Ø§Ø± Ù…Ø§Ù„Ú©ÛŒØªÛŒ Ù…Ø­Ø³ÙˆØ¨ Ù…ÛŒ Ø´ÙˆØ¯. Ø¬Ù‡Øª Ø¢Ú¯Ø§Ù‡ÛŒ Ø§Ø² Ù‚ÙˆØ§Ù†ÛŒÙ† Ø§Ø³ØªÙØ§Ø¯Ù‡ Ø§Ø² Ø§ÛŒÙ† ÙÙˆÙ†Øª Ù‡Ø§ Ù„Ø·ÙØ§ Ø¨Ù‡ ÙˆØ¨ Ø³Ø§ÛŒØª (ÙÙˆÙ†Øª Ø§ÛŒØ±Ø§Ù† Ø¯Ø§Øª Ú©Ø§Ù…) Ù…Ø±Ø§Ø¬Ø¹Ù‡ Ù†Ù…Ø§ÛŒÛŒØ¯
+--------------------------------------------------------------------------------------
+IRAN Sans-serif fonts are considered a proprietary software. To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com
+--------------------------------------------------------------------------------------
+This set of fonts are used in this project under the license: ZWQHA
+--------------------------------------------------------------------------------------
+*
+**/
+ @font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+
+    url('../fonts/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/IRANSansWeb(FaNum)_Bold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/IRANSansWeb(FaNum)_Medium.eot');
+    src: url('../fonts/IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/iransanz/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/IRANSansWeb(FaNum)_Light.eot');
+    src: url('../fonts/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/IRANSansWeb(FaNum)_Light.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/iransanz/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/IRANSansWeb(FaNum)_UltraLight.eot');
+    src: url('../fonts/IRANSansWeb(FaNum)_UltraLight.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/IRANSansWeb(FaNum).eot');
+    src: url('../fonts/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/IRANSansWeb(FaNum).woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/IRANSansWeb(FaNum).woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+
+
+* {
+    font-weight: normal !important;
+}
+
+input.loading {
+    background: rgba(0, 0, 0, 0) url("../img/loading.gif") no-repeat scroll 6px center;
+}
+
+.input-error {
+    background: #ffeeee none repeat scroll 0 0;
+    border: 1px solid #c90d0d;
+}
+
+.quick-links li::before {
+    right: 0;
+    left: auto;
+}
+
+.nav-tabs > li {
+    float: right;
+}
+
+form em {
+    color: red;
+}
+
+.help-block {
+    color: #3c3b3b;
+    font-size: 12px;
+}
+
+.headline {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+    margin-bottom: 15px;
+    padding: 8px 10px;
+    position: relative;
+    text-align: right;
+}
+
+.form-horizontal .control-label {
+    font-weight: 200 !important;
+    text-align: left;
+}
+
+.quick-links li {
+    padding-left: 0 !important;
+    padding-right: 15px !important;
+    position: relative;
+}
+
+.field-validation-error {
+    color: #ff0000;
+    display: block;
+    font-size: 12px;
+    text-align: right;
+}
+
+.input-validation-error {
+    border: 1px solid #f55b5b !important;
+}
+
+.la {
+    text-align: left !important;
+}
+
+.banner-form .form-control {
+    margin-bottom: 2px;
+    margin-top: 15px;
+}
+
+.copyright, .copyright a {
+    color: #4d4c4c !important;
+    float: left;
+    font-size: 12px;
+}
+
+.contact-list i {
+    margin-left: 15px;
+}
+
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 0;
+}
+
+.input-group .form-control {
+    border-left: 0;
+}
+
+.bg-news {
+    background: rgba(0, 0, 0, 0) url("../img/news-bg.jpg") repeat scroll center;
+    background-size: cover;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #ffba00;
+}
+
+.navbar-nav > li:hover {
+    border-bottom-color: #FFE504;
+}
+
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 5px;
+}
+
+.btn {
+    font-weight: normal !important;
+    padding: 6px 24px;
+    border-radius: 4px;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+    border-radius: 3px !important;
+    line-height: 1;
+    padding: 5px 10px !important;
+    font-size:13px !important;
+}
+
+.ltr {
+    direction: ltr !important;
+}
+
+.banner-form .form-control {
+    color: #DAA808;
+}
+
+.btn-submit:hover {
+    background: #daaf08 none repeat scroll 0 0;
+    border-color: #da9408;
+}
+
+.ca {
+    text-align: center;
+}
+
+.captcha {
+    background: #ffffff none repeat scroll 0 0;
+}
+
+.input-group-btn .btn {
+    border-right: 0 none;
+    padding: 6px 30px;
+}
+
+a,
+span,
+div,
+table,
+tr,
+td,
+th,
+img,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+option,
+small,
+strong,
+em,
+select {
+    font-family: IRANSans;
+    font-weight: 100 !important;
+}
+
+.page-header {
+    padding-bottom: 0;
+}
+
+.navbar-header {
+    float: right;
+    margin-top: 11px;
+}
+
+p,
+li {
+    text-align: right;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+}
+
+.navbar-nav > li {
+    float: right;
+    margin-left: 18px;
+}
+
+.headline p {
+    text-align: center;
+}
+
+.features i {
+    float: right;
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.features {
+    background: rgba(255, 255, 255, 0.86) none repeat scroll 0 0;
+    border: 1px solid #dcdada;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    padding: 24px 27px 2px 10px;
+    text-align: right !important;
+}
+
+ul.steps-list li h4,
+ul.steps-list li p {
+    margin-right: 80px;
+}
+
+.blue {
+    color: #eecd00;
+}
+
+.btn-submit {
+    background-color: #eecd01;
+    border: 2px solid #c4a307;
+    color: #000000;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.banner-list li i {
+    color: #dad208;
+    margin-left: 10px;
+}
+
+
+.faq-body i {
+    margin-right: 0px;
+    margin-left: 15px;
+    float: right !important;
+}
+
+.faq-body p {
+    font-size: 12px;
+}
+
+.green-arrow li::before {
+    right: 0;
+    left: auto;
+}
+
+.green-arrow li {
+    margin-left: 0;
+    padding-right: 25px;
+}
+
+.answer::before {
+    margin-right: -15px;
+    margin-left: 0;
+    right: 10%;
+    left: auto;
+}
+
+.answer::after {
+    margin-left: 0;
+    margin-right: -15px;
+    right: 10%;
+    left: auto;
+}
+
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12 {
+    float: right !important;
+}
+
+ul.steps-list li span {
+    float: right;
+}
+
+.dropdown-menu {
+    float: right;
+    font-size: 13px;
+    right: 0;
+    left: auto;
+    padding: 7px 0px;
+    text-align: right;
+}
+
+.dropdown-menu > li > a {
+    font-size: 12px;
+    padding: 6px 12px;
+}
+
+.ra {
+    text-align: right !important;
+}

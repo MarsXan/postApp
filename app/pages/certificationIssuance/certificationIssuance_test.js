@@ -1,10 +1,10 @@
 'use strict';
 
-describe('myApp.view1 module', function() {
+describe('myApp.certificationIssuance module', function() {
 
-  beforeEach(module('myApp.view1'));
+  beforeEach(module('postApp.certificationIssuance'));
 
-  describe('view1 controller', function(){
+  describe('certificationIssuance controller', function(){
 
     it('should ....', inject(function($controller) {
       //spec body

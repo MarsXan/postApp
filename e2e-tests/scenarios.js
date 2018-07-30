@@ -5,20 +5,20 @@
 describe('my app', function() {
 
 
-  it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
+  it('should automatically redirect to /certificationIssuance when location hash/fragment is empty', function() {
     browser.get('index.html');
-    expect(browser.getLocationAbsUrl()).toMatch("/view1");
+    expect(browser.getLocationAbsUrl()).toMatch("/certificationIssuance");
   });
 
 
-  describe('view1', function() {
+  describe('certificationIssuance', function() {
 
     beforeEach(function() {
-      browser.get('index.html#!/view1');
+      browser.get('index.html#!/certificationIssuance');
     });
 
 
-    it('should render view1 when user navigates to /view1', function() {
+    it('should render certificationIssuance when user navigates to /certificationIssuance', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
         toMatch(/partial for view 1/);
     });
@@ -26,14 +26,14 @@ describe('my app', function() {
   });
 
 
-  describe('view2', function() {
+  describe('findPostcode', function() {
 
     beforeEach(function() {
-      browser.get('index.html#!/view2');
+      browser.get('index.html#!/findPostcode');
     });
 
 
-    it('should render view2 when user navigates to /view2', function() {
+    it('should render findPostcode when user navigates to /findPostcode', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
         toMatch(/partial for view 2/);
     });

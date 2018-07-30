@@ -1,10 +1,10 @@
 'use strict';
 
-describe('myApp.view2 module', function() {
+describe('myApp.findPostcode module', function() {
 
-  beforeEach(module('myApp.view2'));
+  beforeEach(module('postApp.findPostcode'));
 
-  describe('view2 controller', function(){
+  describe('findPostcode controller', function(){
 
     it('should ....', inject(function($controller) {
       //spec body
