@@ -3,7 +3,7 @@ postApp.config(function ($routeProvider) {
     $routeProvider
         .when('/', {
             templateUrl: 'pages/certificationIssuance/certificationIssuance.html',
-            controller: 'View1Ctrl'
+            controller: 'certificationIssuanceCtrl'
         })
         .when('/certificationIssuance', {
             templateUrl: 'pages/certificationIssuance/certificationIssuance.html',

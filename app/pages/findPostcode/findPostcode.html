@@ -1,3 +1,32 @@
-<material-div>
+<div>
+    <div ng-controller="findPostcodeCtrl" class="well"
+         style="margin: 20px;background-color: rgba(255, 255, 255, 0.9);padding: 50px">
+        <input type="search" class="form-control input-sm center-block text-center" placeholder="5173834831"
+               aria-controls="PreAvenTable"
+               style="width: 50%" ng-model="postCode">
+        <button class="btn btn-success btn-sm center-block" ng-click="getCityName()" style="width:20%;margin-top: 20px">
+            دریافت آدرس
+            <li class="fa fa-address-card"></li>
+        </button>
+        <table id="BuildingTable" class="table table-bordered dataTable no-footer"
+               style="width: 100%;margin-top: 20px; table-layout: fixed;" role="grid" aria-describedby="BuildingTable_info">
+            <thead>
+            <tr role="row">
 
-</material-div>
+                <th ng-repeat="k in keys" class="sorting_asc text-center" tabindex="0" aria-controls="BuildingTable" rowspan="1" colspan="1"
+                    aria-sort="ascending">{{k.toString()}}
+                </th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr role="row" class="even">
+                <td class="sorting_1 text-center" ng-repeat="m in mValues track by $index">{{m}}</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+</div>
